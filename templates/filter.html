@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        body{
+            background: rgb(red, green, blue);
+            background: linear-gradient(90deg,hsl(0, 100%, 50%),#e8e810,green,orange);
+        }
+       .v{
+        border: 2px solid red;
+        color: black;
+        width: fit-content;
+        padding: 2px;
+        background-color: white;
+        box-shadow: -20px 20px 30px black;
+        border-radius: 20px;
+        
+       }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>filter</h1>
+        <h2><marquee direction="right" scrolldelay="2s" scrollamount="20">{{date}}</marquee></h2>
+        <h2 class="v">{{date|upper}}</h2>
+        <h2 class="v">{{date|lower}}</h2>
+        <h2 class="v">{{date|title}}</h2>
+        <h2 class="v">{{date|length}}</h2>
+        <h2 class="v">{{date|truncatewords:'2'}}</h2>
+        <h2 class="v">{{date|truncatechars:'4'}}</h2>
+        <h2 class="v"> I have {{a}} cat{{a|pluralize}}</h2>
+        <h2 class="v">I Have  {{a}} mango{{a|pluralize:'es'}}</h2>
+        <h2><marquee direction="left" scrolldelay="2s" scrollamount="20"> This {{a}} dog{{a|pluralize}} {{a|pluralize:'is,are'}} mine</marquee></h2>
+
+
+    </center>
+</body>
+</html>
